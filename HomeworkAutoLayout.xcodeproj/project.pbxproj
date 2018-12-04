@@ -14,8 +14,6 @@
 		D3391EC821B527F900FF848C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3391EC621B527F900FF848C /* Main.storyboard */; };
 		D3391ECA21B527FB00FF848C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3391EC921B527FB00FF848C /* Assets.xcassets */; };
 		D3391ECD21B527FB00FF848C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3391ECB21B527FB00FF848C /* LaunchScreen.storyboard */; };
-		D3391ED721B52AFF00FF848C /* ImagePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3391ED521B52AFF00FF848C /* ImagePostTableViewCell.swift */; };
-		D3391ED821B52AFF00FF848C /* ImagePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3391ED621B52AFF00FF848C /* ImagePostTableViewCell.xib */; };
 		D3391EDB21B52B9900FF848C /* PostDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3391EDA21B52B9900FF848C /* PostDTO.swift */; };
 		D3FE710621B617B00090FFAD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FE710421B617B00090FFAD /* PostTableViewCell.swift */; };
 		D3FE710721B617B00090FFAD /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FE710521B617B00090FFAD /* PostTableViewCell.xib */; };
@@ -31,8 +29,6 @@
 		D3391EC921B527FB00FF848C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3391ECC21B527FB00FF848C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3391ECE21B527FB00FF848C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3391ED521B52AFF00FF848C /* ImagePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePostTableViewCell.swift; sourceTree = "<group>"; };
-		D3391ED621B52AFF00FF848C /* ImagePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePostTableViewCell.xib; sourceTree = "<group>"; };
 		D3391EDA21B52B9900FF848C /* PostDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDTO.swift; sourceTree = "<group>"; };
 		D3FE710421B617B00090FFAD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D3FE710521B617B00090FFAD /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -83,8 +79,6 @@
 		D3391ED421B52ADE00FF848C /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
-				D3391ED521B52AFF00FF848C /* ImagePostTableViewCell.swift */,
-				D3391ED621B52AFF00FF848C /* ImagePostTableViewCell.xib */,
 				D3FE710421B617B00090FFAD /* PostTableViewCell.swift */,
 				D3FE710521B617B00090FFAD /* PostTableViewCell.xib */,
 				D330467321B6CD3700C4E8E2 /* ImageTableViewCell.swift */,
@@ -164,7 +158,6 @@
 				D3391ECA21B527FB00FF848C /* Assets.xcassets in Resources */,
 				D330467621B6CD3700C4E8E2 /* ImageTableViewCell.xib in Resources */,
 				D3391EC821B527F900FF848C /* Main.storyboard in Resources */,
-				D3391ED821B52AFF00FF848C /* ImagePostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +172,6 @@
 				D3391EDB21B52B9900FF848C /* PostDTO.swift in Sources */,
 				D3FE710621B617B00090FFAD /* PostTableViewCell.swift in Sources */,
 				D330467521B6CD3700C4E8E2 /* ImageTableViewCell.swift in Sources */,
-				D3391ED721B52AFF00FF848C /* ImagePostTableViewCell.swift in Sources */,
 				D3391EC321B527F900FF848C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
