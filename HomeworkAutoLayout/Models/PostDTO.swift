@@ -11,5 +11,5 @@ import Foundation
 struct PostDTO {
     var description: String
     var location: String
-    var hasImage: Bool
+    var postImage: String
 }

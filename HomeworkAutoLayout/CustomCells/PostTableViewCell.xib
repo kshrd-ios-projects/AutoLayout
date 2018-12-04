@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="741" height="281.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vmt-fw-iF6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="vmt-fw-iF6">
                         <rect key="frame" x="12" y="11" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="6TQ-Zm-cpN"/>
@@ -41,17 +41,36 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sreng Khorn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12i-TQ-N6Z">
-                        <rect key="frame" x="80" y="11" width="599" height="21"/>
+                        <rect key="frame" x="80" y="11" width="599" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6as-xv-Nb3">
-                        <rect key="frame" x="80" y="40" width="61" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-hO-3bl">
+                        <rect key="frame" x="80" y="40" width="187" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6as-xv-Nb3">
+                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phnom Penh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqD-aD-Bty">
+                                <rect key="frame" x="74.5" y="0.0" width="81.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-america-filled-50 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="kQ5-9F-ymD">
+                                <rect key="frame" x="170" y="0.0" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="KR7-cl-Dcn"/>
+                                    <constraint firstAttribute="width" constant="17" id="LkB-c6-WOH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="168" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zu-SI-1EU">
                         <rect key="frame" x="78" y="174.5" width="437" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,19 +78,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34 Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-OQ-N1m">
-                        <rect key="frame" x="540" y="174.5" width="92" height="17"/>
+                        <rect key="frame" x="540.5" y="174.5" width="91.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="159 Shares" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaJ-zD-FWY">
                         <rect key="frame" x="649" y="174.5" width="72" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phnom Penh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqD-aD-Bty">
-                        <rect key="frame" x="154" y="40" width="82" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -139,7 +152,6 @@
                     <constraint firstItem="YwP-OQ-N1m" firstAttribute="top" secondItem="cwY-R4-Vka" secondAttribute="bottom" constant="32.5" id="Jt8-GW-4oX"/>
                     <constraint firstItem="udU-NH-ZuY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="KK8-VY-gYC"/>
                     <constraint firstItem="OOE-cW-ubL" firstAttribute="top" secondItem="eaJ-zD-FWY" secondAttribute="bottom" constant="15" id="KvK-vQ-UnW"/>
-                    <constraint firstItem="DqD-aD-Bty" firstAttribute="leading" secondItem="6as-xv-Nb3" secondAttribute="trailing" constant="13" id="LCO-tW-oVf"/>
                     <constraint firstItem="0Ao-NB-NUy" firstAttribute="top" secondItem="YwP-OQ-N1m" secondAttribute="bottom" constant="15" id="LQK-X9-QI8"/>
                     <constraint firstItem="12i-TQ-N6Z" firstAttribute="leading" secondItem="vmt-fw-iF6" secondAttribute="trailing" constant="18" id="LiD-Ax-T3c"/>
                     <constraint firstAttribute="trailing" secondItem="cxm-VA-jZP" secondAttribute="trailing" id="Opm-3K-T2e"/>
@@ -148,14 +160,11 @@
                     <constraint firstItem="cwY-R4-Vka" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="W4j-3T-Jej"/>
                     <constraint firstItem="5YY-QI-OeW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Zgu-nI-e5W"/>
                     <constraint firstAttribute="trailing" secondItem="cwY-R4-Vka" secondAttribute="trailing" constant="20" id="bW9-fB-VKt"/>
-                    <constraint firstItem="6as-xv-Nb3" firstAttribute="leading" secondItem="vmt-fw-iF6" secondAttribute="trailing" constant="18" id="ccs-Je-zzu"/>
                     <constraint firstItem="xlB-px-8Gn" firstAttribute="leading" secondItem="udU-NH-ZuY" secondAttribute="trailing" constant="-1" id="dZ5-4Q-Nk4"/>
-                    <constraint firstItem="DqD-aD-Bty" firstAttribute="top" secondItem="12i-TQ-N6Z" secondAttribute="bottom" constant="8" id="dnY-Ha-2Cl"/>
                     <constraint firstItem="5YY-QI-OeW" firstAttribute="leading" secondItem="12i-TQ-N6Z" secondAttribute="trailing" constant="20" id="gFn-AE-jgt"/>
                     <constraint firstItem="UYt-SW-b0b" firstAttribute="top" secondItem="OuE-fM-gbF" secondAttribute="bottom" constant="19" id="gd4-6f-kxE"/>
                     <constraint firstItem="eaJ-zD-FWY" firstAttribute="leading" secondItem="YwP-OQ-N1m" secondAttribute="trailing" constant="17" id="hZM-qs-mgQ"/>
                     <constraint firstItem="vmt-fw-iF6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="kHw-2Q-JsB"/>
-                    <constraint firstItem="6as-xv-Nb3" firstAttribute="top" secondItem="12i-TQ-N6Z" secondAttribute="bottom" constant="8" id="lks-U1-ZQ4"/>
                     <constraint firstItem="0Ao-NB-NUy" firstAttribute="leading" secondItem="UYt-SW-b0b" secondAttribute="trailing" constant="46" id="mNa-cy-nYi"/>
                     <constraint firstItem="cwY-R4-Vka" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="81" id="nol-nq-5Nc"/>
                     <constraint firstItem="3Zu-SI-1EU" firstAttribute="top" secondItem="cwY-R4-Vka" secondAttribute="bottom" constant="32.5" id="qEd-jV-dsc"/>
@@ -171,8 +180,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="commentTextField" destination="UYt-SW-b0b" id="UOL-uK-ot5"/>
                 <outlet property="descriptionLabel" destination="cwY-R4-Vka" id="Ogd-P7-9xb"/>
                 <outlet property="locationLabel" destination="DqD-aD-Bty" id="Lgs-jz-WPx"/>
+                <outlet property="profileImageView" destination="vmt-fw-iF6" id="pxP-05-zPA"/>
                 <outlet property="timeLabel" destination="6as-xv-Nb3" id="7YA-y4-1Nv"/>
             </connections>
             <point key="canvasLocation" x="365.60000000000002" y="40.479760119940032"/>
@@ -181,9 +192,11 @@
     <resources>
         <image name="crying" width="400" height="400"/>
         <image name="facebook-love-emoji-png-10" width="600" height="600"/>
+        <image name="icons8-america-filled-50 (1)" width="50" height="50"/>
         <image name="icons8-facebook-like-51" width="50" height="50"/>
         <image name="icons8-forward-arrow-50" width="50" height="50"/>
         <image name="icons8-more-filled-50" width="50" height="50"/>
+        <image name="profile" width="1312" height="1296"/>
         <image name="upscale-235553078058212" width="592" height="588"/>
     </resources>
 </document>

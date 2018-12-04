@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D330467521B6CD3700C4E8E2 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330467321B6CD3700C4E8E2 /* ImageTableViewCell.swift */; };
+		D330467621B6CD3700C4E8E2 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D330467421B6CD3700C4E8E2 /* ImageTableViewCell.xib */; };
 		D3391EC321B527F900FF848C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3391EC221B527F900FF848C /* AppDelegate.swift */; };
 		D3391EC521B527F900FF848C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3391EC421B527F900FF848C /* ViewController.swift */; };
 		D3391EC821B527F900FF848C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3391EC621B527F900FF848C /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D330467321B6CD3700C4E8E2 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		D330467421B6CD3700C4E8E2 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		D3391EBF21B527F900FF848C /* HomeworkAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeworkAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3391EC221B527F900FF848C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3391EC421B527F900FF848C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				D3391ED621B52AFF00FF848C /* ImagePostTableViewCell.xib */,
 				D3FE710421B617B00090FFAD /* PostTableViewCell.swift */,
 				D3FE710521B617B00090FFAD /* PostTableViewCell.xib */,
+				D330467321B6CD3700C4E8E2 /* ImageTableViewCell.swift */,
+				D330467421B6CD3700C4E8E2 /* ImageTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				D3391ECD21B527FB00FF848C /* LaunchScreen.storyboard in Resources */,
 				D3FE710721B617B00090FFAD /* PostTableViewCell.xib in Resources */,
 				D3391ECA21B527FB00FF848C /* Assets.xcassets in Resources */,
+				D330467621B6CD3700C4E8E2 /* ImageTableViewCell.xib in Resources */,
 				D3391EC821B527F900FF848C /* Main.storyboard in Resources */,
 				D3391ED821B52AFF00FF848C /* ImagePostTableViewCell.xib in Resources */,
 			);
@@ -171,6 +178,7 @@
 				D3391EC521B527F900FF848C /* ViewController.swift in Sources */,
 				D3391EDB21B52B9900FF848C /* PostDTO.swift in Sources */,
 				D3FE710621B617B00090FFAD /* PostTableViewCell.swift in Sources */,
+				D330467521B6CD3700C4E8E2 /* ImageTableViewCell.swift in Sources */,
 				D3391ED721B52AFF00FF848C /* ImagePostTableViewCell.swift in Sources */,
 				D3391EC321B527F900FF848C /* AppDelegate.swift in Sources */,
 			);

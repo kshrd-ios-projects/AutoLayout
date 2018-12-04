@@ -11,24 +11,36 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let postCellId = "postCellId"
+    let imageCellId = "imageCellId"
     var posts = [PostDTO]()
     
     private func registerPostCell() {
         tableView.register(UINib.init(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: postCellId)
+        tableView.register(UINib.init(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: imageCellId)
     }
     
     private func initPostData() {
         let post = PostDTO(
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            description: "Happy Birthday!",
             location: "Phnom Penh",
-            hasImage: false
+            postImage: ""
         )
         let post2 = PostDTO(
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            location: "Phnom Penh",
+            postImage: ""
+        )
+        let post3 = PostDTO(
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             location: "Kandal",
-            hasImage: false
+            postImage: ""
         )
-        posts = [post, post2]
+        let post4 = PostDTO(
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            location: "Kandal",
+            postImage: "rose-blue"
+        )
+        posts = [post, post2, post3, post4]
         
     }
     
@@ -49,12 +61,28 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: postCellId, for: indexPath) as! PostTableViewCell
+        let postCell = tableView.dequeueReusableCell(withIdentifier: postCellId, for: indexPath) as! PostTableViewCell
         
-        cell.selectionStyle = .none
+        let imageCell = tableView.dequeueReusableCell(withIdentifier: imageCellId, for: indexPath) as! ImageTableViewCell
+        var cell = postCell
+        
+        postCell.selectionStyle = .none
+        imageCell.selectionStyle = .none
         let post = posts[indexPath.row]
-        cell.descriptionLabel.text = post.description
-        cell.locationLabel.text = post.location
+        
+        if post.postImage.isEmpty {
+            
+            postCell.descriptionLabel.text = post.description
+            postCell.locationLabel.text = post.location
+            cell = postCell
+        } else {
+            imageCell.descriptionLabel.numberOfLines = imageCell.descriptionLabel.calculateMaxLines()
+            imageCell.descriptionLabel.text = post.description
+            imageCell.locationLabel.text = post.location
+            imageCell.postImageView.image = UIImage(named: post.postImage)
+            return imageCell
+        }
+
         
         return cell
     }
@@ -62,3 +90,13 @@ extension ViewController: UITableViewDataSource {
     
 }
 
+extension UILabel {
+    func calculateMaxLines() -> Int {
+        let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
+        let charSize = font.lineHeight
+        let text = (self.text ?? "") as NSString
+        let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        let linesRoundedUp = Int(ceil(textSize.height/charSize))
+        return linesRoundedUp
+    }
+}
