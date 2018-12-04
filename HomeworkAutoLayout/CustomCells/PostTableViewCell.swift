@@ -24,6 +24,7 @@ class PostTableViewCell: UITableViewCell {
         
         commentTextField.layer.cornerRadius = 15.0
         commentTextField.layer.masksToBounds = true
+        commentTextField.layer.borderWidth = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

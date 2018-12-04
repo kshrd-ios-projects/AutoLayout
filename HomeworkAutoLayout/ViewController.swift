@@ -69,10 +69,14 @@ extension ViewController: UITableViewDataSource {
         postCell.selectionStyle = .none
         imageCell.selectionStyle = .none
         let post = posts[indexPath.row]
+        var attributedText = NSMutableAttributedString(string: post.description, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 28)])
         
         if post.postImage.isEmpty {
             
-            postCell.descriptionLabel.text = post.description
+            if postCell.descriptionLabel.calculateMaxLines() > 1 {
+                attributedText = NSMutableAttributedString(string: post.description, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17)])
+            }
+            postCell.descriptionLabel.attributedText = attributedText
             postCell.locationLabel.text = post.location
             cell = postCell
         } else {
