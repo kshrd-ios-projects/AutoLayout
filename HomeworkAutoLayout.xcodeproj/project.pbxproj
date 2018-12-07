@@ -15,6 +15,10 @@
 		D3391ECA21B527FB00FF848C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3391EC921B527FB00FF848C /* Assets.xcassets */; };
 		D3391ECD21B527FB00FF848C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3391ECB21B527FB00FF848C /* LaunchScreen.storyboard */; };
 		D3391EDB21B52B9900FF848C /* PostDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3391EDA21B52B9900FF848C /* PostDTO.swift */; };
+		D3A5462621BA55F900E51A91 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A5462521BA55F900E51A91 /* HomeStoryboard.storyboard */; };
+		D3A5462821BA568800E51A91 /* BlueStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A5462721BA568800E51A91 /* BlueStoryboard.storyboard */; };
+		D3D0C8D221BA520700195EDD /* GreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C8D121BA520700195EDD /* GreenStoryboard.storyboard */; };
+		D3D0C8D421BA54B200195EDD /* RedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D0C8D321BA54B200195EDD /* RedStoryboard.storyboard */; };
 		D3FE710621B617B00090FFAD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FE710421B617B00090FFAD /* PostTableViewCell.swift */; };
 		D3FE710721B617B00090FFAD /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FE710521B617B00090FFAD /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 		D3391ECC21B527FB00FF848C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3391ECE21B527FB00FF848C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3391EDA21B52B9900FF848C /* PostDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDTO.swift; sourceTree = "<group>"; };
+		D3A5462521BA55F900E51A91 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		D3A5462721BA568800E51A91 /* BlueStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlueStoryboard.storyboard; sourceTree = "<group>"; };
+		D3D0C8D121BA520700195EDD /* GreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GreenStoryboard.storyboard; sourceTree = "<group>"; };
+		D3D0C8D321BA54B200195EDD /* RedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RedStoryboard.storyboard; sourceTree = "<group>"; };
 		D3FE710421B617B00090FFAD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D3FE710521B617B00090FFAD /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +72,7 @@
 		D3391EC121B527F900FF848C /* HomeworkAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				D3D0C8D021BA51AA00195EDD /* Storyboards */,
 				D3391EC221B527F900FF848C /* AppDelegate.swift */,
 				D3391EC421B527F900FF848C /* ViewController.swift */,
 				D3391EC621B527F900FF848C /* Main.storyboard */,
@@ -93,6 +102,17 @@
 				D3391EDA21B52B9900FF848C /* PostDTO.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D3D0C8D021BA51AA00195EDD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D3D0C8D121BA520700195EDD /* GreenStoryboard.storyboard */,
+				D3D0C8D321BA54B200195EDD /* RedStoryboard.storyboard */,
+				D3A5462521BA55F900E51A91 /* HomeStoryboard.storyboard */,
+				D3A5462721BA568800E51A91 /* BlueStoryboard.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +173,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D0C8D421BA54B200195EDD /* RedStoryboard.storyboard in Resources */,
+				D3A5462821BA568800E51A91 /* BlueStoryboard.storyboard in Resources */,
 				D3391ECD21B527FB00FF848C /* LaunchScreen.storyboard in Resources */,
+				D3A5462621BA55F900E51A91 /* HomeStoryboard.storyboard in Resources */,
 				D3FE710721B617B00090FFAD /* PostTableViewCell.xib in Resources */,
 				D3391ECA21B527FB00FF848C /* Assets.xcassets in Resources */,
+				D3D0C8D221BA520700195EDD /* GreenStoryboard.storyboard in Resources */,
 				D330467621B6CD3700C4E8E2 /* ImageTableViewCell.xib in Resources */,
 				D3391EC821B527F900FF848C /* Main.storyboard in Resources */,
 			);

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kqA-sG-XcC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Facebook-->
+        <scene sceneID="W9N-Tp-QYI">
+            <objects>
+                <viewController id="nWd-8A-XDj" customClass="ViewController" customModule="HomeworkAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbC-6M-fes">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-In-Dqa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellId" id="eop-Lm-agy">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eop-Lm-agy" id="FkV-S8-Pf6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nWd-8A-XDj" id="oos-Z9-ItW"/>
+                                    <outlet property="delegate" destination="nWd-8A-XDj" id="fNe-1S-Ttd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y7z-In-Dqa" firstAttribute="top" secondItem="tjm-4P-zjS" secondAttribute="top" id="B75-st-WK4"/>
+                            <constraint firstItem="tjm-4P-zjS" firstAttribute="trailing" secondItem="Y7z-In-Dqa" secondAttribute="trailing" id="CAz-pH-Dy9"/>
+                            <constraint firstItem="tjm-4P-zjS" firstAttribute="bottom" secondItem="Y7z-In-Dqa" secondAttribute="bottom" id="Mb1-kR-1ag"/>
+                            <constraint firstItem="Y7z-In-Dqa" firstAttribute="leading" secondItem="tjm-4P-zjS" secondAttribute="leading" id="vQJ-b7-4Lk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tjm-4P-zjS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="ncb-IP-UdD"/>
+                    <navigationItem key="navigationItem" title="Facebook" id="6Fp-u4-IJ9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Y7z-In-Dqa" id="r98-2L-TGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nf-va-DpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="870"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tSG-pp-0QR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kqA-sG-XcC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-activity-feed-50" id="epC-9e-BxG">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LeF-V2-cwy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nWd-8A-XDj" kind="relationship" relationship="rootViewController" id="Uau-Wy-XdL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lac-Ps-31A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="870"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-activity-feed-50" width="50" height="50"/>
+    </resources>
+</document>
